@@ -6,10 +6,22 @@ async function getByNumber(numero) {
         if (!user) {
             console.log('Usuario no encontrado');
         }
-        return user;
+        return user.celular;
     } catch (error){
        console.log('Error al obtener usuario ' + error.message);
     }
 }
 
-module.exports = getByNumber;
+async function getNameByNumber(numero) {
+    try{
+        const user = await User.findOne({celular:numero});
+        if (!user) {
+            console.log('Usuario no encontrado');
+        }
+        return user.nombre;
+    } catch (error){
+       console.log('Error al obtener usuario ' + error.message);
+    }
+}
+
+module.exports = [getByNumber, getNameByNumber];
