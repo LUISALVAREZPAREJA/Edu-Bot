@@ -1,0 +1,483 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573128607950@s.whatsapp.net',
+    fromMe: false,
+    id: '3AFF01E4BEA1E715815D',
+    participant: undefined
+  },
+  messageTimestamp: 1723771006,
+  pushName: 'Andres',
+  broadcast: false,
+  message: Message {
+    conversation: 'I',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'I',
+  from: '573128607950'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7df40b2c-e2c5-468f-a614-abf4aa48eed5',
+  keyword: 'key_95108fd1-f5ee-408d-bb4e-62a846ee82a9',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a128a35931a411033a618209003d1c98'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: 'A53D0EFA213A74EC2B1B99ACC32EEDCF',
+    participant: undefined
+  },
+  messageTimestamp: 1723771008,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'ola bro',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ola bro',
+  from: '573205696581'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7df40b2c-e2c5-468f-a614-abf4aa48eed5',
+  keyword: 'key_95108fd1-f5ee-408d-bb4e-62a846ee82a9',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a128a35931a411033a618209003d1c98'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: 'BA543A6119CD462C9AAED6D5563A4CC8',
+    participant: undefined
+  },
+  messageTimestamp: 1723771009,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 86400,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573205696581'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573128607950@s.whatsapp.net',
+    fromMe: false,
+    id: '3A526281C969DC1C8431',
+    participant: undefined
+  },
+  messageTimestamp: 1723771015,
+  pushName: 'Andres',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '573128607950'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_462d29d8-50b7-493b-9793-265734508d39',
+  keyword: 'key_795e6b7a-aeed-4b38-b7ea-401842259dc7',
+  answer: '📄 Aquí tenemos el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a3b0c300b733e009cdf9ef86b31a24b4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: '05F3A6D13D57398E3BECB7D4D3F17C10',
+    participant: undefined
+  },
+  messageTimestamp: 1723771019,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '2',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '573205696581'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_462d29d8-50b7-493b-9793-265734508d39',
+  keyword: 'key_795e6b7a-aeed-4b38-b7ea-401842259dc7',
+  answer: '📄 Aquí tenemos el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a3b0c300b733e009cdf9ef86b31a24b4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: 'F4CE6B3B842FBA9D98E4FB8E70AAB5A0',
+    participant: undefined
+  },
+  messageTimestamp: 1723771019,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 86400,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573205696581'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573128607950@s.whatsapp.net',
+    fromMe: false,
+    id: '3A8828BF76BA33289DCD',
+    participant: undefined
+  },
+  messageTimestamp: 1723771020,
+  pushName: 'Andres',
+  broadcast: false,
+  message: Message {
+    conversation: 'F',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'F',
+  from: '573128607950'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7df40b2c-e2c5-468f-a614-abf4aa48eed5',
+  keyword: 'key_95108fd1-f5ee-408d-bb4e-62a846ee82a9',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a128a35931a411033a618209003d1c98'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: '69DB21C7DEC880686ED8F59D1C6B1AFC',
+    participant: undefined
+  },
+  messageTimestamp: 1723771029,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'ola bro',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ola bro',
+  from: '573205696581'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7df40b2c-e2c5-468f-a614-abf4aa48eed5',
+  keyword: 'key_95108fd1-f5ee-408d-bb4e-62a846ee82a9',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a128a35931a411033a618209003d1c98'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: '03C0C224CBC47A554483A67C6C8CFA5F',
+    participant: undefined
+  },
+  messageTimestamp: 1723771030,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 86400,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573205696581'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573004595752@s.whatsapp.net',
+    fromMe: false,
+    id: 'F954FEB4AF7E22DA97133E43C09C4B0F',
+    participant: undefined
+  },
+  messageTimestamp: 1723771030,
+  pushName: 'Josxxsj',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Hola',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573004595752'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7df40b2c-e2c5-468f-a614-abf4aa48eed5',
+  keyword: 'key_95108fd1-f5ee-408d-bb4e-62a846ee82a9',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a128a35931a411033a618209003d1c98'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: '3873EE3269C6104F376877D317EF01C3',
+    participant: undefined
+  },
+  messageTimestamp: 1723771034,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '1',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '573205696581'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573004595752@s.whatsapp.net',
+    fromMe: false,
+    id: '7590D7B3F1694C82678EB608E4562063',
+    participant: undefined
+  },
+  messageTimestamp: 1723771042,
+  pushName: 'Josxxsj',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Necesito un profesor pa el sábado',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Necesito un profesor pa el sábado',
+  from: '573004595752'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: 'C30B59314ABBDAD24D5E4349EBEB53ED',
+    participant: undefined
+  },
+  messageTimestamp: 1723771044,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '2',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '573205696581'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_462d29d8-50b7-493b-9793-265734508d39',
+  keyword: 'key_795e6b7a-aeed-4b38-b7ea-401842259dc7',
+  answer: '📄 Aquí tenemos el flujo secundario',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a3b0c300b733e009cdf9ef86b31a24b4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573205696581@s.whatsapp.net',
+    fromMe: false,
+    id: '15860638DF7BF29AD924649E23B3BE1B',
+    participant: undefined
+  },
+  messageTimestamp: 1723771044,
+  pushName: 'Steven',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 86400,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573205696581'
+}
