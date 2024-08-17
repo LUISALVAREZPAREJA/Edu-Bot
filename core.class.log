@@ -1,31 +1,26 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573004430289@s.whatsapp.net',
+    remoteJid: '573142786639@s.whatsapp.net',
     fromMe: false,
-    id: 'A5BC506CB8C7703524E15EB9385B285A',
+    id: '3AE7D66639537E283A78',
     participant: undefined
   },
-  messageTimestamp: 1723845938,
-  pushName: 'Edúcate Para El Saber',
+  messageTimestamp: 1723916970,
+  pushName: 'German',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    conversation: '.',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
-  from: '573004430289'
+  body: '.',
+  from: '573142786639'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c8e396ba-cbea-402b-bc1a-f0fdc9b65118',
-  keyword: 'key_fe98822f-e454-4859-b66b-df43f1768755',
+  ref: 'ans_7efbf61b-c6b5-43f2-8eb6-42ed269f7130',
+  keyword: 'key_06c8b18a-2f9b-44f3-80b6-c1e36df9bbe8',
   answer: '__capture_only_intended__',
   options: {
     media: null,
@@ -39,440 +34,25 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'feeddee9f7d4d30096725c8f80fe662c'
+  refSerialize: '92cf5dcc5a598971be4e74a65aaaf1b0'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573004430289@s.whatsapp.net',
+    remoteJid: '573142786639@s.whatsapp.net',
     fromMe: false,
-    id: '29195200D45013833D9A638AB04B7691',
+    id: '3A24A19CD8E16813B8D3',
     participant: undefined
   },
-  messageTimestamp: 1723845943,
-  pushName: 'Edúcate Para El Saber',
+  messageTimestamp: 1723916982,
+  pushName: 'German',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '1',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
+    conversation: 'German cantillo',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '1',
-  from: '573004430289'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_25643358-ded3-4827-8412-883aa471afdf',
-  keyword: 'key_a2cae687-f643-4a62-8395-a55fb9522d73',
-  answer: '🚀 Puedes aportar tu granito de arena a este proyecto\n' +
-    '[*opencollective*] https://opencollective.com/bot-whatsapp\n' +
-    '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez\n' +
-    '[*patreon*] https://www.patreon.com/leifermendez\n' +
-    '\n' +
-    '*2* Para siguiente paso.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '1fac6a786f9b6284bfdc03b5cf96c564'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB000E4D527C9DAE72826',
-    participant: undefined
-  },
-  messageTimestamp: 1723846519,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573008199360'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c8e396ba-cbea-402b-bc1a-f0fdc9b65118',
-  keyword: 'key_fe98822f-e454-4859-b66b-df43f1768755',
-  answer: '__capture_only_intended__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'feeddee9f7d4d30096725c8f80fe662c'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '69608934D8691270AEA9F59D93A3BB87',
-    participant: undefined
-  },
-  messageTimestamp: 1723846520,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    protocolMessage: ProtocolMessage {
-      key: [MessageKey],
-      type: 4,
-      ephemeralExpiration: 604800,
-      ephemeralSettingTimestamp: [Long],
-      disappearingMode: [DisappearingMode]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '',
-  from: '573008199360'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0A1BD31484B01961F85',
-    participant: undefined
-  },
-  messageTimestamp: 1723846522,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '1',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '1',
-  from: '573008199360'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_25643358-ded3-4827-8412-883aa471afdf',
-  keyword: 'key_a2cae687-f643-4a62-8395-a55fb9522d73',
-  answer: '🚀 Puedes aportar tu granito de arena a este proyecto\n' +
-    '[*opencollective*] https://opencollective.com/bot-whatsapp\n' +
-    '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez\n' +
-    '[*patreon*] https://www.patreon.com/leifermendez\n' +
-    '\n' +
-    '*2* Para siguiente paso.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '1fac6a786f9b6284bfdc03b5cf96c564'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '2C69ACC65740D12C36569261254E275B',
-    participant: undefined
-  },
-  messageTimestamp: 1723846522,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    protocolMessage: ProtocolMessage {
-      key: [MessageKey],
-      type: 4,
-      ephemeralExpiration: 604800,
-      ephemeralSettingTimestamp: [Long],
-      disappearingMode: [DisappearingMode]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '',
-  from: '573008199360'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB04A6B5371CD61AE7B2C',
-    participant: undefined
-  },
-  messageTimestamp: 1723846526,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '2',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '573008199360'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_62dc5fc0-49f0-4200-a45c-0bc78774ebac',
-  keyword: 'key_78773f73-1b2b-4f21-8373-822970dcb796',
-  answer: '📄 Aquí tenemos el flujo secundario',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '2678d3834ea981c98fa741d8f8c855f9'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '7F90A8BB7327E92520B56CDF0584990B',
-    participant: undefined
-  },
-  messageTimestamp: 1723846527,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    protocolMessage: ProtocolMessage {
-      key: [MessageKey],
-      type: 4,
-      ephemeralExpiration: 604800,
-      ephemeralSettingTimestamp: [Long],
-      disappearingMode: [DisappearingMode]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '',
-  from: '573008199360'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB089B3AAC2EA20B280A2',
-    participant: undefined
-  },
-  messageTimestamp: 1723846530,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'jAJSDAJ',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'jAJSDAJ',
-  from: '573008199360'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c8e396ba-cbea-402b-bc1a-f0fdc9b65118',
-  keyword: 'key_fe98822f-e454-4859-b66b-df43f1768755',
-  answer: '__capture_only_intended__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'feeddee9f7d4d30096725c8f80fe662c'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C9659F50DC7A9DC52E',
-    participant: undefined
-  },
-  messageTimestamp: 1723846531,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'ARTE',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'ARTE',
-  from: '573008199360'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c8e396ba-cbea-402b-bc1a-f0fdc9b65118',
-  keyword: 'key_fe98822f-e454-4859-b66b-df43f1768755',
-  answer: '__capture_only_intended__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'feeddee9f7d4d30096725c8f80fe662c'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '4B988E275185FD860718595DAB79714D',
-    participant: undefined
-  },
-  messageTimestamp: 1723846532,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    protocolMessage: ProtocolMessage {
-      key: [MessageKey],
-      type: 4,
-      ephemeralExpiration: 604800,
-      ephemeralSettingTimestamp: [Long],
-      disappearingMode: [DisappearingMode]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '',
-  from: '573008199360'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB00C5A4D4140297B50DA',
-    participant: undefined
-  },
-  messageTimestamp: 1723846533,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '2',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '573008199360'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c8e396ba-cbea-402b-bc1a-f0fdc9b65118',
-  keyword: 'key_fe98822f-e454-4859-b66b-df43f1768755',
-  answer: '__capture_only_intended__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'feeddee9f7d4d30096725c8f80fe662c'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573008199360@s.whatsapp.net',
-    fromMe: false,
-    id: 'CDCEB4C92BEBB6CD0C0B5B468A545355',
-    participant: undefined
-  },
-  messageTimestamp: 1723846534,
-  pushName: 'EdR.',
-  broadcast: false,
-  message: Message {
-    protocolMessage: ProtocolMessage {
-      key: [MessageKey],
-      type: 4,
-      ephemeralExpiration: 604800,
-      ephemeralSettingTimestamp: [Long],
-      disappearingMode: [DisappearingMode]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '',
-  from: '573008199360'
+  body: 'German cantillo',
+  from: '573142786639'
 }

@@ -33,33 +33,48 @@ const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
     [flowSecundario]
 )
 
-const flowUsuarioNoRegistrado = addKeyword(['no-validacion','1']).addAnswer(
-    [
-        '🚀 Puedes aportar tu granito de arena a este proyecto',
-        '[*opencollective*] https://opencollective.com/bot-whatsapp',
-        '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-        '[*patreon*] https://www.patreon.com/leifermendez',
-        '\n*2* Para siguiente paso.',
-    ],
-    null,
-    null,
-    [flowSecundario]
-)
-const flowUsuarioRegistrado = addKeyword('validacion-exitosa')
-.addAction(null, async (context, {flowDynamic}) => {
-    const userName = contextManager.getData('userName');    
-    await flowDynamic([`🌤️🖐️Buenos días Profesor ${userName}`, 
-        'Para poder ayudarlo por favor escriba una de las siguientes opciones:  \n'+
-        ' *1.*✅ *Cronograma* \n'+
-        ' *2.*📰 *Cuenta de cobro* \n'+
-        ' *3.*💸 *Informacion sobre pagos* \n'+
-        ' *4.*👨‍💻 *Hablar con un asesor*'],
+const flowUsuarioNoRegistrado = addKeyword(['no-validacion',])
+.addAnswer('🌤️🖐️Buenos días. \n'+
+    'Bienvenido te comunicas con el area académica de Educate Para El Saber 📚 \n' +
+    'Estoy aqui para ayudarte en lo que necesites, para mejorar tu experiencia por favor \n'+
+    '✏️ *Escribe tu nombre y apellido* ✏️',
+    {capture:true}, async(context, {flowDynamic})=>{
+        const nombreApellido = context.body.trim();
+        await flowDynamic([`😁Muchas gracias ${nombreApellido} \n` +
+            'Necesito datos adicionales antes de continuar 😊, Por favor indica si eres:  \n' +
+            ' *1.*🧑‍🎓 *Estudiante* \n' +
+            ' *2.*👩‍👩‍👦 *Padre de familia* \n' +
+            ' *3.*⁉️ *Otro* \n' ])
         
-    )
-});
+    }
+    
+)
+
+
+const flowUsuarioRegistrado = addKeyword('validacion-exitosa')
+.addAnswer('📚 *Por favor digite un numero* 📚',{capture:true}, async (context ,{fallBack,flowDynamic,gotoFlow})=>{
+    
+    const mensaje = context.body.trim();
+                
+                if (mensaje === '1') {
+                    return gotoFlow(flowTuto);
+                } else if (mensaje === '2') {
+                    return gotoFlow(flowCuentaCobro);
+                } else if (mensaje === '3') {
+                    return gotoFlow(flowInformacionPagos);
+                } else if (mensaje === '4') {
+                    return gotoFlow(flowAsesor);
+                } else {
+                    await flowDynamic(['😥Lo siento, no entendí su opción. Por favor, elija una de las opciones proporcionadas.😅']);
+                    return fallBack();
+                }
+
+})
+
+
    
 const flowPrincipal = addKeyword(EVENTS.WELCOME)
-    .addAction(null, async (context, {gotoFlow}) => {
+    .addAction(null, async (context, {gotoFlow, flowDynamic}) => {
         const numero = context.from;
         const userBynumer = await getByNumber(numero);
         const userNameByNumber = await getNameByNumber(numero);
@@ -67,7 +82,13 @@ const flowPrincipal = addKeyword(EVENTS.WELCOME)
         if (userBynumer) {
 
             contextManager.setData('userName', userNameByNumber)
-            contextManager.setData('otherInfo', userBynumer)
+            const userName = contextManager.getData('userName');
+            await flowDynamic([`🌤️🖐️Buenos días Profesor ${userName} \n` +
+                'Para poder ayudarlo por favor escriba una de las siguientes opciones:  \n' +
+                ' *1.*✅ *Cronograma* \n' +
+                ' *2.*📰 *Cuenta de cobro* \n' +
+                ' *3.*💸 *Informacion sobre pagos* \n' +
+                ' *4.*👨‍💻 *Hablar con un asesor*'])
 
             return gotoFlow(flowUsuarioRegistrado);
         } else {
