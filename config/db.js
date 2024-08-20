@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const mongoURI = 'mongodb://localhost:27017/Chat-Bot';
+const mongoURI = 'mongodb+srv://LuisAlvarez:Caraballo236@chat-bot.hteyc.mongodb.net/Chat-Bot?retryWrites=true&w=majority&appName=Chat-Bot'
+
 
 
 const connectDB = async () => {
