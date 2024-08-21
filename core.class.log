@@ -1,0 +1,122 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573004430289@s.whatsapp.net',
+    fromMe: false,
+    id: '831AFB13187979888E',
+    participant: undefined
+  },
+  messageTimestamp: 1724277391,
+  pushName: 'Edúcate Para El Saber',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'ho', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Edúcate Para El Saber',
+  body: 'ho',
+  from: '573004430289'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_95b7a3a2-0fba-4ea6-8c2b-a43c3db8039c',
+  keyword: 'key_3af6ffc9-a2b5-4c6b-a5e1-70210ad45ea8',
+  answer: 'Bienvenido mi nombre es 🤖 *Edu-Bot *🤖 y estoy aqui para ayudarte en lo que necesites.\n' +
+    'Para continuar por favor selecciona: \n' +
+    ' *1.*⏭️ *Iniciar* ',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8fa0fc83a2e0f65685f41f8e11a9798a'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_86530291-9dce-4c19-9ca7-76d41c05cb6d',
+  keyword: 'ans_95b7a3a2-0fba-4ea6-8c2b-a43c3db8039c',
+  answer: '📚 *Por favor digite un numero* 📚',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '21d9266ccbdbaaab0546ffbb3577d17c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573004430289@s.whatsapp.net',
+    fromMe: false,
+    id: '57E7AE6534701D3101',
+    participant: undefined
+  },
+  messageTimestamp: 1724277399,
+  pushName: 'Edúcate Para El Saber',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Edúcate Para El Saber',
+  body: '1',
+  from: '573004430289'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573004430289@s.whatsapp.net',
+    fromMe: false,
+    id: '8E37E4BA88B353C556',
+    participant: undefined
+  },
+  messageTimestamp: 1724277403,
+  pushName: 'Edúcate Para El Saber',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'f', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Edúcate Para El Saber',
+  body: 'f',
+  from: '573004430289'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573004430289@s.whatsapp.net',
+    fromMe: false,
+    id: '759F538A124554D4BC',
+    participant: undefined
+  },
+  messageTimestamp: 1724277405,
+  pushName: 'Edúcate Para El Saber',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 's', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'Edúcate Para El Saber',
+  body: 's',
+  from: '573004430289'
+}

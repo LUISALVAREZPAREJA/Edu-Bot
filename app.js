@@ -6,27 +6,109 @@ const MockAdapter = require('@bot-whatsapp/database/mock')
 const connectDB = require('./config/db');
 const [getByNumber, getNameByNumber] = require('./controllers/userController')
 const contextManager = require('./utils/contextManager');
+const { captureEventStream } = require('@whiskeysockets/baileys');
 
 connectDB();
 
-const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
+const flowDespedida = addKeyword('chao')
+.addAnswer('espero haberte ayudado')
 
-const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
-    [
-        '📄 Aquí encontras las documentación recuerda que puedes mejorarla',
-        'https://bot-whatsapp.netlify.app/',
-        '\n*2* Para siguiente paso.',
-    ],
-    null,
-    null,
-    [flowSecundario]
+const flowAsesorAcademico = addKeyword(['Asesor'])
+.addAction(null, async (context, { provider}) => {
+    const asesorAcademico = '573004430289';
+    const nombreApellido = context.pushName;
+    const numero = context.from.substring(2);
+    const mensajeAsesor = `❗❗❗El usuario ${nombreApellido} ${numero} desea hablar con un asesor😁.`;
+
+    try {
+        await provider.sendText(asesorAcademico + '@s.whatsapp.net', mensajeAsesor);
+    } catch (error) {
+        console.error("Error al enviar el mensaje al asesor:", error);
+    }
+
+}).addAnswer('En breve un asesor se pondra en contacto con usted...', {capture:true}, async (context, {gotoFlow})=>{
+    const mensaje = context;
+    if (mensaje) {
+        return gotoFlow(flowDespedida)
+    }
+})
+
+
+
+const flowSecundario = addKeyword(['disculpas'])
+.addAnswer('😖Lo sentimos este modulo aun no esta habilitado.😞 \n 1.🔙 *Volver al menú anterior*', {capture:true}, async (context, {gotoFlow, fallBack, flowDynamic})=>{
+        const opcion = context.body
+        if (opcion === '1') {
+            return gotoFlow(flowEstudiante)
+        } else{
+            await flowDynamic(['😥Lo siento, no entendí su opción. Por favor, elija una de las opciones proporcionadas.😅']);
+            return fallBack();
+        }
+    }
+
 )
 
-const flowEstudiante = addKeyword(['tutorial', 'tuto']).addAnswer(
-    [
-       'hola'
-    ]
-)
+const flowCertificados = addKeyword(['Certificados'])
+.addAnswer('😊Por favor escribe el certificado que necesitas para continuar \n',
+    {capture: true}, async (context, {provider, flowDynamic})=>{
+        const asesorContable = '573004430289';
+        const nombreApellido = context.pushName;
+        const mensaje = context.body;
+        const numero = context.from.substring(2);
+        const mensajeAsesor = `❗❗❗El usuario ${nombreApellido} ${numero} desea ${mensaje}😁.`;
+    
+        try {
+            await provider.sendText(asesorContable + '@s.whatsapp.net', mensajeAsesor);
+            await flowDynamic ([''])
+        } catch (error) {
+            console.error("Error al enviar el mensaje al asesor:", error);
+        }
+        
+        if (condition) {
+            
+        }
+    
+    });
+
+
+const flowOpcionesEstudiante = addKeyword('validacion-exitosa')
+.addAnswer('📚 *Por favor digite un numero* 📚',{capture:true}, async (context ,{fallBack,flowDynamic,gotoFlow})=>{
+    
+    const mensaje = context.body.trim();
+                
+                if (mensaje === '1') {
+                    return gotoFlow(flowSecundario);
+                } else if (mensaje === '2') {
+                    return gotoFlow(flowSecundario);
+                } else if (mensaje === '3') {
+                    return gotoFlow(flowCertificados);
+                } else if (mensaje === '4') {
+                    return gotoFlow(flowSecundario);
+                } else if (mensaje === '5') {
+                    return gotoFlow(flowUsuarioNoRegistrado);
+                } else if (mensaje === '6') {
+                    return gotoFlow(flowAsesorAcademico);        
+                } else {
+                    await flowDynamic(['😥Lo siento, no entendí su opción. Por favor, elija una de las opciones proporcionadas.😅']);
+                    return fallBack();
+                }
+
+})
+
+const flowEstudiante = addKeyword(['estudiante'])
+.addAction(null, async (context, {flowDynamic, gotoFlow})=>{
+const nombreApellido = context.pushName;
+await flowDynamic([`${nombreApellido}, por favor selecciona la opcion que necesites: \n`+
+    '1.📃 *Resultados* \n'+
+    '2.📆 *Cronograma de clases* \n'+
+    '3.📝 *Certificados* \n'+
+    '4.❓ *Informacion de Cursos* \n'+
+    '5.🔙 *Volver al menu anterior* \n'+
+    '6.🧑‍💼 *Habla con un asesor*' 
+])
+return gotoFlow(flowOpcionesEstudiante)
+
+})
 
 const flowOpcionesNoRegistrado = addKeyword('validacion-exitosa')
 .addAnswer('📚 *Por favor digite un numero* 📚',{capture:true}, async (context ,{fallBack,flowDynamic,gotoFlow})=>{
@@ -63,7 +145,7 @@ mensaje="noches"
 
         await flowDynamic([`🌤️🖐️Buenos ${mensaje} ${nombreApellido} \n` +
             'Te comunicas con el area académica de Educate Para El Saber 📚 \n' +
-            'Estoy aqui para ayudarte en lo que necesites, para mejorar tu experiencia' +
+            'Estoy aqui para ayudarte en lo que necesites, para mejorar tu experiencia \n' +
             'Necesito datos adicionales antes de continuar 😊, Por favor indica si eres:  \n' +
             ' *1.*🧑‍🎓 *Estudiante* \n' +
             ' *2.*👩‍👩‍👦 *Padre de familia* \n' +
@@ -87,7 +169,7 @@ const flowUsuarioRegistrado = addKeyword('validacion-exitosa')
                 } else if (mensaje === '3') {
                     return gotoFlow(flowInformacionPagos);
                 } else if (mensaje === '4') {
-                    return gotoFlow(flowAsesor);
+                    return gotoFlow(flowAsesorAcademico);
                 } else {
                     await flowDynamic(['😥Lo siento, no entendí su opción. Por favor, elija una de las opciones proporcionadas.😅']);
                     return fallBack();
@@ -97,7 +179,7 @@ const flowUsuarioRegistrado = addKeyword('validacion-exitosa')
 
 
    
-const flowPrincipal = addKeyword(EVENTS.WELCOME)
+const flowPrincipal = addKeyword(['Hola','hola','ola'])
     .addAction(null, async (context, {gotoFlow, flowDynamic}) => {
         const numero = context.from;
         console.log(numero);
@@ -120,12 +202,25 @@ const flowPrincipal = addKeyword(EVENTS.WELCOME)
         }
     });
     
+    const flowBienvenida = addKeyword(EVENTS.WELCOME)
+    .addAnswer('Bienvenido mi nombre es 🤖 *Edu-Bot * 🤖 y estoy aqui para ayudarte en lo que necesites.\n'+
+        'Para continuar por favor selecciona: \n *1.*⏭️ *Iniciar* ')
+    .addAnswer('📚 *Por favor digite un numero* 📚', {capture:true}, async (context, {gotoFlow, flowDynamic, fallBack})=>{
+            const mensaje = context.body
+            if (mensaje === '1') {
+                return gotoFlow(flowPrincipal)
+            }else{
+                await flowDynamic(['😥Lo siento, no entendí su opción. Por favor escribe *Iniciar*.😅']);
+                    return fallBack();
+            }
+        }
+    )
      
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal, flowUsuarioRegistrado, flowUsuarioNoRegistrado,
-        flowOpcionesNoRegistrado, flowEstudiante
+    const adapterFlow = createFlow([flowBienvenida,flowPrincipal, flowUsuarioRegistrado, flowUsuarioNoRegistrado,
+        flowOpcionesNoRegistrado, flowEstudiante, flowOpcionesEstudiante, flowSecundario, flowCertificados,flowAsesorAcademico
     ])
     const adapterProvider = createProvider(BaileysProvider)
 
@@ -133,7 +228,13 @@ const main = async () => {
         flow: adapterFlow,
         provider: adapterProvider,
         database: adapterDB,
-    })
+    },
+    {
+        globalState: {
+          encendido: true,
+        }
+    }    
+)
 
     QRPortalWeb()
 }
